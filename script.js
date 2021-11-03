@@ -84,7 +84,7 @@ function startGame(){
                                     alert("You died to often. But god tells you if you press F5 you restart");
                                 }else{
                                     let i = 0;
-                                    for(i=0; i<5;i++){
+                                    for(i=0; i<3;i++){
                                         
                                         audiods1.pause();
                                         audiods1.currentTime = 0;
