@@ -35,8 +35,9 @@ function startGame(){
                     
                     default:
                         alert("Press either 1 or 2 if you want to play");
-                        break;
                         
+                        break;
+                        i++
                     }
                     
                 }if(i===3){
@@ -79,7 +80,7 @@ function startGame(){
                                             alert("Press 1,2 or 3 if you want to play");  
                                             break;
                                         }
-                                        
+                                        i++
                                     }if(i===3){
                                     alert("You died to often. But god tells you if you press F5 you restart");
                                 }else{
@@ -120,7 +121,7 @@ function startGame(){
                         break;
                         
                     }
-                    
+                    i++
                 if(i===3){
                 alert("You died to often. But god tells you if you press F5 you can restart");
             }else{
@@ -153,8 +154,9 @@ function startGame(){
                                     alert("Press 1 or 2 if you want to play");  
                                     break;
                                 }
-                                
+                                i++  
                             }
+
                         if(i===3){
                             alert("You died to often. But god tells you if you press F5 you can restart");
                         }else{
@@ -209,7 +211,7 @@ function startGame(){
                                                     alert("Press 1 or 2 if you want to play");  
                                                     break;
                                                 }
-                                                
+                                                i++
                                                 
                                             }
                                         }
