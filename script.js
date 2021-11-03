@@ -14,7 +14,7 @@ function startGame(){
     changeBackground("./data/sleep.png");
     let sleeping = confirm("zzzzZZZZzzzZZZZ");
     let i = 0;
-    for( i=0; i<5;i++){
+    for( i=0; i<3;i++){
         
         changeBackground("./data/sleep.png");
         audiods1.pause();
@@ -25,7 +25,7 @@ function startGame(){
             case 1:
                 changeBackground("./data/awake.png");
                 alert("You wake up and see a stranger with a knife in his hand.")
-                i=5;
+                i=3;
                 break;
                 case 2:
                     audiods1.play();
@@ -39,14 +39,11 @@ function startGame(){
                         
                     }
                     
-                }
-                
-                
-                if(i===3){
+                }if(i===3){
                     alert("You died to often. But god tells you if you press F5 you restart");
                 }else{
                     let i = 0;
-                    for(i=0; i<5;i++){
+                    for(i=0; i<3;i++){
                         
                         audioGuns.pause();
                         audioGuns.currentTime = 0;
@@ -64,7 +61,7 @@ function startGame(){
                             case 1:
                                 changeBackground("./data/fight.png");
                                 alert("Fighting the guy.")  
-                                i=5;
+                                i=3;
                                 break;
                                 
                                 case 2:
@@ -83,9 +80,7 @@ function startGame(){
                                             break;
                                         }
                                         
-                                    }
-                                    
-                                }if(i===3){
+                                    }if(i===3){
                                     alert("You died to often. But god tells you if you press F5 you restart");
                                 }else{
                                     let i = 0;
@@ -117,7 +112,7 @@ function startGame(){
                                                     case 3:
                                                         changeBackground("./data/killer.png");
                                                         alert("You switch clothes with the intruder and backstab everyone. Good Job, you managed to escape")
-                    i=5;
+                    i=3;
                     break;
                     
                     default:
@@ -126,8 +121,7 @@ function startGame(){
                         
                     }
                     
-                }
-            }if(i===3){
+                if(i===3){
                 alert("You died to often. But god tells you if you press F5 you can restart");
             }else{
                 let i = 0
@@ -137,7 +131,7 @@ function startGame(){
                 alert(`You are curious and want to know who these guys were. So you try to identify them`)
                 changeBackground("./data/bar.png");
                 alert(`After looking at each intruder, you recognize one of the poker-players in your local bar`)
-                for(i=0; i<5;i++){
+                for(i=0; i<3;i++){
                     let choice4 = +prompt(`You can go to the bar to get more information or hide the rest of the day.
                     1 (Go bar)
                     2 (Hide)`);
@@ -161,11 +155,11 @@ function startGame(){
                                 }
                                 
                             }
-                        }if(i===5){
+                        if(i===3){
                             alert("You died to often. But god tells you if you press F5 you can restart");
                         }else{
                             let i = 0
-                            for(i=0; i<5;i++){
+                            for(i=0; i<3;i++){
                                 audioGuns.pause();
                               audioGuns.currentTime = 0;
                             
@@ -195,13 +189,12 @@ function startGame(){
                                             alert("Anywas you finaly meet Mike and ask him, why he did that.")
                                             
                                             changeBackground("./data/mikekill.png");
-                                             audioGuns.play();
+                                            audioGuns.play();
                                             alert("He only smiles and says they will find you and kill you. After saying that Mike shot himself in the head.")
-                                          
                                             alert("You leave his house but somehow you dont feel happy you are more concerned about the future.")
                                             changeBackground("./data/end.png");
                                             alert("The end?")
-                                            i=5;
+                                            i=3;
                                             break;
                                             
                                             case 2:
@@ -209,7 +202,7 @@ function startGame(){
                                                 alert("You decided to leave the country and visit your family in Russia")
                                                 changeBackground("./data/ivan.png");
                                                 alert("You start a new life in Russia as Ivan")
-                                                i = 5
+                                                i = 3
                                                 break;
                                                 
                                                 default:
@@ -221,8 +214,11 @@ function startGame(){
                                             }
                                         }
                                         
-                                    }
+            }
+        }
+    }
+}
                                     
                                     
                                     
-                                
+}
