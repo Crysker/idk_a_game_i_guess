@@ -39,8 +39,9 @@ function startGame(){
                         break;
                        
                     }
+    }
                     
-                }if(i===3){
+                if(i===3){
                     alert("You died to often. But god tells you if you press F5 you restart");
                 }else{
                     let i = 0;
@@ -108,20 +109,21 @@ function startGame(){
                                                     changeBackground("./data/maxresdefault.jpg");
                                                     alert("The intruders didnt belive the lie and killed you right away")
                                                     audiods1.play();
-                                                    
+                                             
                                                     break;
                                                     case 3:
                                                         changeBackground("./data/killer.png");
                                                         alert("You switch clothes with the intruder and backstab everyone. Good Job, you managed to escape")
-                    i=3;
-                    break;
+                                                         i=3;
+                                                          break;
                     
                     default:
                         alert("Press 1,2 or 3 if you want to play");  
                         break;
                         
                     }
-                    i++
+                                    }
+                                
                 if(i===3){
                 alert("You died to often. But god tells you if you press F5 you can restart");
             }else{
