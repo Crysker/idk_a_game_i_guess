@@ -195,9 +195,9 @@ function startGame(){
                                             alert("Anywas you finaly meet Mike and ask him, why he did that.")
                                             
                                             changeBackground("./data/mikekill.png");
-                                              
+                                             audioGuns.play();
                                             alert("He only smiles and says they will find you and kill you. After saying that Mike shot himself in the head.")
-                                            audioGuns.play(); 
+                                          
                                             alert("You leave his house but somehow you dont feel happy you are more concerned about the future.")
                                             changeBackground("./data/end.png");
                                             alert("The end?")
