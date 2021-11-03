@@ -131,15 +131,13 @@ function startGame(){
                 alert("You died to often. But god tells you if you press F5 you can restart");
             }else{
                 let i = 0
+                audiods1.pause();
+                audiods1.currentTime = 0;
+                
+                alert(`You are curious and want to know who these guys were. So you try to identify them`)
+                changeBackground("./data/bar.png");
+                alert(`After looking at each intruder, you recognize one of the poker-players in your local bar`)
                 for(i=0; i<5;i++){
-                    
-                    audiods1.pause();
-                    audiods1.currentTime = 0;
-                    
-                    alert(`You are curious and want to know who these guys were. So you try to identify them`)
-                    changeBackground("./data/bar.png");
-                    alert(`After looking at each intruder, you recognize one of the poker-players in your local bar`)
-                    
                     let choice4 = +prompt(`You can go to the bar to get more information or hide the rest of the day.
                     1 (Go bar)
                     2 (Hide)`);
