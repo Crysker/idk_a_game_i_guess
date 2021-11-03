@@ -42,7 +42,7 @@ function startGame(){
                 }
                 
                 
-                if(i===5){
+                if(i===3){
                     alert("You died to often. But god tells you if you press F5 you restart");
                 }else{
                     let i = 0;
@@ -85,7 +85,7 @@ function startGame(){
                                         
                                     }
                                     
-                                }if(i===5){
+                                }if(i===3){
                                     alert("You died to often. But god tells you if you press F5 you restart");
                                 }else{
                                     let i = 0;
@@ -127,7 +127,7 @@ function startGame(){
                     }
                     
                 }
-            }if(i===5){
+            }if(i===3){
                 alert("You died to often. But god tells you if you press F5 you can restart");
             }else{
                 let i = 0
