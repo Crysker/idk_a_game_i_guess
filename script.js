@@ -92,7 +92,7 @@ function startGame(){
                                         audiods1.pause();
                                         audiods1.currentTime = 0;
                                         changeBackground("./data/deadguys.png");
-                                        let choice3 = +prompt(`You are stronger, and faster than the intruder. You managed to get his knife and kill him. However you hear noises outside. What will you do?
+                                        let choice3 = +prompt(`You are stronger, and faster than the intruder. You managed to get his knife and kill him. However you hear people outside. What will you do?
                      
              1(Fight)
              2 (Destroy a window and tell the guys, that the target ran away)
@@ -134,7 +134,7 @@ function startGame(){
                 
                 alert(`You are curious and want to know who these guys were. So you try to identify them`)
                 changeBackground("./data/bar.png");
-                alert(`After looking at each intruder, you recognize one of the poker-players in your local bar`)
+                alert(`After looking at each intruder, you recognize one as a poker-player in your local bar`)
                 for(i=0; i<3;i++){
                     let choice4 = +prompt(`You can go to the bar to get more information or hide the rest of the day.
                     1 (Go bar)
